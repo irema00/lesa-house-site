@@ -1,6 +1,6 @@
 "use client";
 
-import { site } from "@/content/site";
+import { site } from "../content/site";
 
 export function Header() {
   return (
