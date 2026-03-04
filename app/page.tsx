@@ -1,10 +1,12 @@
 import { Header } from "./components/Header";
+import { Hero } from "./components/sections/Hero";
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen bg-[#F4F1EC]">
       <Header />
-      <main className="min-h-screen bg-lesa-cream flex items-center justify-center">
-        <h1 className="font-serif text-4xl text-lesa-black">Lesa House</h1>
+
+      <main>
+        <Hero />
       </main>
     </div>
   );
