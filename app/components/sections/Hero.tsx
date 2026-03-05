@@ -1,39 +1,48 @@
+import Image from "next/image";
 import { site } from "@/app/content/site";
 import { ui } from "@/app/ui";
 export function Hero() {
   return (
     <section id="home" className="scroll-mt-24">
-      <div className={`${ui.container} pt-10 pb-12 sm:pt-14`}>
-        <div
-          className={`${ui.card} p-8 sm:p-12`}
-          style={{
-            background:
-              "linear-gradient(135deg, var(--sand), color-mix(in oklab, var(--cream) 60%, white 40%))",
-          }}
-        >
-          <p className="text-sm tracking-wide text-[--(--muted)]">
-            {site.brand.tagline} • {site.brand.city}
-          </p>
+      <div className={`${ui.container} pt-6 sm:pt-10`}>
+        {/* Hero card/frame */}
+        <div className={`${ui.card} overflow-hidden p-0`}>
+          {/* Photo band */}
+          <div className="relative h-55 w-full sm:h-70 md:h-85">
+            <Image
+              src={site.hero.image.src}
+              alt={site.hero.image.alt}
+              fill
+              priority
+              className="object-cover"
+            />
 
-          <h1 className="mt-3 font-serif text-4xl leading-tight tracking-tight text-(--black)] sm:text-6xl">
-            {site.hero.headline}
-          </h1>
+            {/* Soft overlay (cream -> transparent) */}
+            <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#F4F1EC]/70 via-transparent to-transparent" />
+          </div>
+          {/* Text area */}
+          <div className="px-6 py-10 sm:px-10 sm:py-12">
+            <p className="text-sm tracking-wide text-muted">
+              {site.hero.kicker}
+            </p>
 
-          <p className="mt-4 max-w-2xl text-base text(--muted)] sm:text-lg">
-            {site.hero.subheadline}
-          </p>
+            <h1 className="mt-3 font-serif text-4xl leading-tight tracking-tight text-[#1C1C1C] sm:text-5xl md:text-6xl">
+              {site.hero.headline}
+            </h1>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href={site.hero.primaryCta.href} className={ui.btnPrimary}>
-              {site.hero.primaryCta.label}
-            </a>
-            <a
-              href={site.hero.secondaryCta.href}
-              className="rounded-xl border border-black/20 px-5 py-3 text-sm"
-            >
-              {" "}
-              {site.hero.secondaryCta.label}
-            </a>
+            <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
+              {site.hero.subheadline}
+            </p>
+
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href={site.hero.primaryCta.href} className={ui.btnPrimary}>
+                {site.hero.primaryCta.label}
+              </a>
+
+              <a href={site.hero.secondaryCta.href} className={ui.btnSecondary}>
+                {site.hero.secondaryCta.label}
+              </a>
+            </div>
           </div>
         </div>
       </div>
