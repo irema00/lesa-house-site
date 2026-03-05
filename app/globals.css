@@ -14,11 +14,11 @@
   --border: rgba(28, 28, 28, 0.12);
 }
 
-html {
-  scroll-behavior: smooth;
-}
 body {
   height: 100%;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
