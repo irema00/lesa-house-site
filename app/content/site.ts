@@ -12,11 +12,15 @@ export const site = {
   ],
   headerCta: { label: "Reservation", href: "#contact" },
   hero: {
-    headline: "Lesa House",
+    image: {
+      src: "/hero-placeholder.png",
+      alt: "Lesa House interior",
+    },
+    headline: "Welcome to Lesa House",
     subheadline:
       "A warm, premium event space designed for beautiful celebrations and gatherings.",
-    primaryCta: { label: "Request a Reservation", href: "#contact" },
-    secondaryCta: { label: "View Gallery", href: "#gallery" },
+    primaryCta: { label: "Book an Event", href: "#contact" },
+    secondaryCta: { label: "Explore Gallery", href: "#gallery" },
   },
   contact: {
     phone: "+90 XXX XXX XX XX",
