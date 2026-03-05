@@ -10,7 +10,7 @@ export const ui = {
 
   // Header
   headerWrap:
-    "sticky top-0 z-50 border-b border-[var(--border)] bg-[color:var(--cream)]/80 backdrop-blur supports-[backdrop-filter]:bg-[color:var(--cream)]/70",
+    "sticky top-0 z-50 border-b border-[var(--border)] bg-[color:var(--cream)]/88 backdrop-blur supports-[backdrop-filter]:bg-[color:var(--cream)]/75 shadow-[0_6px_20px_rgba(28,28,28,0.06)]",
   navLink:
     "relative text-sm text-[color:var(--muted)] transition hover:text-[var(--black)] focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
   navLinkUnderline:
@@ -20,4 +20,12 @@ export const ui = {
     "inline-flex h-10 items-center justify-center rounded-xl bg-[var(--gold)] px-4 text-sm font-medium text-[var(--black)] transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
   btnGoldOutline:
     "inline-flex h-10 items-center justify-center rounded-xl border border-[var(--gold)] px-4 text-sm font-medium text-[var(--black)] transition hover:bg-[color:var(--gold)]/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
+  iconBtn:
+    "inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[var(--border)] bg-white/40 transition hover:bg-white/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
+
+  mobilePanel:
+    "md:hidden border-b border-[var(--border)] bg-[color:var(--cream)]/95 backdrop-blur supports-[backdrop-filter]:bg-[color:var(--cream)]/80",
+
+  mobileLink:
+    "block rounded-xl px-4 py-3 text-sm text-[var(--black)] transition hover:bg-black/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
 };

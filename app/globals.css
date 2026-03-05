@@ -26,3 +26,31 @@ body {
   color: var(--fg);
   font-family: var(--font-sans);
 }
+.text-muted {
+  color: var(--muted);
+}
+.text-blackish {
+  color: var(--black);
+}
+.border-brand {
+  border-color: var(--border);
+}
+.bg-cream-80 {
+  background: color-mix(in oklab, var(--cream) 80%, transparent);
+}
+
+.only-phone {
+  display: block;
+}
+.no-phone {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .only-phone {
+    display: none;
+  }
+  .no-phone {
+    display: flex;
+  }
+}
