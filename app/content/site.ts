@@ -10,6 +10,7 @@ export const site = {
     { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
+  headerCta: { label: "Reservation", href: "#contact" },
   hero: {
     headline: "Lesa House",
     subheadline:

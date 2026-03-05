@@ -15,4 +15,9 @@ export const ui = {
     "relative text-sm text-[color:var(--muted)] transition hover:text-[var(--black)] focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
   navLinkUnderline:
     "after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-[var(--gold)] after:transition-all hover:after:w-full",
+
+  btnGold:
+    "inline-flex h-10 items-center justify-center rounded-xl bg-[var(--gold)] px-4 text-sm font-medium text-[var(--black)] transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
+  btnGoldOutline:
+    "inline-flex h-10 items-center justify-center rounded-xl border border-[var(--gold)] px-4 text-sm font-medium text-[var(--black)] transition hover:bg-[color:var(--gold)]/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
 };

@@ -33,6 +33,9 @@ export function Header() {
               {item.label}
             </a>
           ))}
+          <a href={site.headerCta.href} className={ui.btnGold}>
+            {site.headerCta.label}
+          </a>
         </nav>
 
         {/* Mobile nav (simple + clean) */}
@@ -42,6 +45,10 @@ export function Header() {
           </a>
           <a href="#contact" className={`${ui.navLink} ${ui.navLinkUnderline}`}>
             Contact
+          </a>
+
+          <a href={site.headerCta.href} className={ui.btnGold}>
+            {site.headerCta.label}
           </a>
         </nav>
       </div>
