@@ -27,15 +27,11 @@ export function Hero() {
             <a href={site.hero.primaryCta.href} className={ui.btnPrimary}>
               {site.hero.primaryCta.label}
             </a>
-            <a href={site.hero.secondaryCta.href} className={ui.btnSecondary}>
-              {site.hero.secondaryCta.label}
-            </a>
-          </div>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href={site.hero.secondaryCta.href}
               className="rounded-xl border border-black/20 px-5 py-3 text-sm"
             >
+              {" "}
               {site.hero.secondaryCta.label}
             </a>
           </div>
