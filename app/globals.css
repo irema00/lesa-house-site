@@ -1,17 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4f1ec;
-  --foreground: #1a1a1a;
+  --cream: #f4f1ec;
+  --black: #1c1c1c;
+  --gold: #c6a65b;
+  --forest: #3f5a4a;
+  --sage: #aeb8a6;
+  --sand: #e1d6c8;
+
+  --bg: var(--cream);
+  --fg: var(--black);
+  --muted: rgba(28, 28, 28, 0.68);
+  --border: rgba(28, 28, 28, 0.12);
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
 body {
   height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg);
+  color: var(--fg);
   font-family: var(--font-sans);
 }
