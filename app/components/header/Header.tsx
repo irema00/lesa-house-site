@@ -4,10 +4,21 @@ import Link from "next/link";
 import { site } from "@/app/content/site";
 import { ui } from "@/app/ui";
 import { HomeIcon, MenuIcon } from "./icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
     <header className={ui.headerWrap}>
