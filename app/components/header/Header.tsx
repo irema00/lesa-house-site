@@ -1,10 +1,10 @@
 "use client";
-
-import { useState } from "react";
+import { MobileDrawer } from "./MobileDrawer";
 import Link from "next/link";
 import { site } from "@/app/content/site";
 import { ui } from "@/app/ui";
 import { HomeIcon, MenuIcon } from "./icons";
+import { useState } from "react";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -75,6 +75,7 @@ export function Header() {
           </nav>
         </div>
       </div>
+      <MobileDrawer open={open} onClose={() => setOpen(false)} />
     </header>
   );
 }
