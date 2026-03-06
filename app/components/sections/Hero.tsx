@@ -6,19 +6,21 @@ export function Hero() {
     <section id="home" className="scroll-mt-24">
       <div className={`${ui.container} pt-6 sm:pt-10`}>
         {/* Hero card/frame */}
-        <div className={`${ui.card} overflow-hidden p-0`}>
+        <div
+          className={`${ui.card} overflow-hidden p-0 shadow-[0_18px_50px_rgba(28,28,28,0.08)]`}
+        >
           {/* Photo band */}
-          <div className="relative h-65 w-full sm:h-80 md:h-95">
+          <div className="relative h-62.5 w-full sm:h-80 md:h-100">
             <Image
               src={site.hero.image.src}
               alt={site.hero.image.alt}
               fill
               priority
-              className="object-cover"
+              className="object-cover scale-[1.01]"
             />
 
             {/* Soft overlay (cream -> transparent) */}
-            <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#F4F1EC]/60 via-transparent to-transparent" />
+            <div className="pointer-events-none absolute inset-0 bg-linear[linear-gradient(to_bottom,rgba(244,241,236,0.72),rgba(244,241,236,0.14),rgba(28,28,28,0.08))]" />
           </div>
           {/* Text area */}
           <div className="px-6 py-10 sm:px-10 sm:py-12 md:px-12 md:py-14">
