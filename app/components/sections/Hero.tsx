@@ -8,7 +8,7 @@ export function Hero() {
         {/* Hero card/frame */}
         <div className={`${ui.card} overflow-hidden p-0`}>
           {/* Photo band */}
-          <div className="relative h-55 w-full sm:h-70 md:h-85">
+          <div className="relative h-65 w-full sm:h-80 md:h-95">
             <Image
               src={site.hero.image.src}
               alt={site.hero.image.alt}
@@ -18,19 +18,19 @@ export function Hero() {
             />
 
             {/* Soft overlay (cream -> transparent) */}
-            <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#F4F1EC]/70 via-transparent to-transparent" />
+            <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-[#F4F1EC]/60 via-transparent to-transparent" />
           </div>
           {/* Text area */}
-          <div className="px-6 py-10 sm:px-10 sm:py-12">
+          <div className="px-6 py-10 sm:px-10 sm:py-12 md:px-12 md:py-14">
             <p className="text-sm tracking-wide text-muted">
               {site.hero.kicker}
             </p>
 
-            <h1 className="mt-3 font-serif text-4xl leading-tight tracking-tight text-[#1C1C1C] sm:text-5xl md:text-6xl">
+            <h1 className="mt-4 font-serif text-4xl leading-tight tracking-tight text-[#1C1C1C] sm:text-5xl md:text-6xl">
               {site.hero.headline}
             </h1>
 
-            <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
               {site.hero.subheadline}
             </p>
 
