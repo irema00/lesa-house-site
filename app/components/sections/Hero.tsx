@@ -22,19 +22,19 @@ export function Hero() {
           </div>
           {/* Text area */}
           <div className="px-6 py-10 sm:px-10 sm:py-12 md:px-12 md:py-14">
-            <p className="text-sm tracking-wide text-muted">
+            <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-[#3F5A4A]">
               {site.hero.kicker}
             </p>
 
-            <h1 className="mt-4 font-serif text-4xl leading-tight tracking-tight text-[#1C1C1C] sm:text-5xl md:text-6xl">
+            <h1 className="mt-3 font-serif text-[34px] leading-[1.1] tracking-tight text-[#1C1C1C]sm:text-[46px] md:text-[58px]">
               {site.hero.headline}
             </h1>
 
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-[#5E5E5E] sm:text-[16px]">
               {site.hero.subheadline}
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href={site.hero.primaryCta.href} className={ui.btnPrimary}>
                 {site.hero.primaryCta.label}
               </a>
