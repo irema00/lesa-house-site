@@ -15,7 +15,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
     <>
       {/* Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-black/25 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-40 bg-black/25 backdrop-blur-sm transition-opacity duration-300 ease-out md:hidden ${
           open ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
         onClick={onClose}
@@ -24,7 +24,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
 
       {/* Drawer */}
       <aside
-        className={`fixed right-0 top-0 z-50 flex h-dvh w-[82vw] max-w-[360px] flex-col bg-[#F4F1EC] shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-transform duration-300 ease-out md:hidden ${
+        className={`fixed right-0 top-0 z-50 flex h-dvh w-[82vw] max-w-[360px] flex-col bg-[#F4F1EC] shadow-[0_30px_80px_rgba(0,0,0,0.22)] transition-transform duration-300 ease-[cubic-bezier(.22,1,.36,1)] md:hidden ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
         aria-hidden={!open}
