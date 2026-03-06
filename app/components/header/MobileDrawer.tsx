@@ -43,7 +43,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
             type="button"
             aria-label="Close menu"
             onClick={onClose}
-            className="text-[#1C1C1C]"
+            className="text-[#1C1C1C] transition active:scale-90 active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10"
           >
             <CloseIcon className="h-5 w-5" />
           </button>

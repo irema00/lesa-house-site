@@ -43,7 +43,9 @@ export function Header() {
             aria-label="Go to home"
             className="flex items-center justify-start text-[#1C1C1C]"
           >
-            <HomeIcon className="h-5 w-5" />
+            <span className="flex h-9 w-9 items-center justify-center rounded-full text-[#1C1C1C] transition hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10">
+              <HomeIcon className="h-5 w-5" />
+            </span>
           </Link>
 
           <Link
@@ -60,14 +62,15 @@ export function Header() {
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((prev) => !prev)}
-            className="flex items-center justify-end text-[#1C1C1C]"
+            className="flex items-center justify-end text-[#1C1C1C] transition active:scale-90 active:opacity-70"
           >
-            <span className="relative flex h-5 w-5 items-center justify-center">
+            <span className="relative flex h-9 w-9 items-center justify-center rounded-full text-[#1C1C1C] transition hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10">
               <MenuIcon
                 className={`absolute h-5 w-5 transition-all duration-200 ease-out ${
                   open ? "scale-75 opacity-0" : "scale-100 opacity-100"
                 }`}
               />
+
               <CloseIcon
                 className={`absolute h-5 w-5 transition-all duration-200 ease-out ${
                   open ? "scale-100 opacity-100" : "scale-75 opacity-0"
@@ -88,7 +91,7 @@ export function Header() {
             <Link
               href="#home"
               aria-label="Go to home"
-              className="text-[#1C1C1C] transition hover:text-[#3F5A4A]"
+              className="flex h-9 w-9 items-center justify-center rounded-full text-[#1C1C1C] transition hover:bg-black/5 hover:text-[#3F5A4A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10"
             >
               <HomeIcon className="h-4.5 w-4.5" />
             </Link>
