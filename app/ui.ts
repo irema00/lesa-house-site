@@ -4,9 +4,9 @@ export const ui = {
   h2: "font-serif text-3xl tracking-tight text-[var(--black)] sm:text-4xl",
   p: "text-[color:var(--muted)] leading-relaxed",
   btnPrimary:
-    "inline-flex h-11 items-center justify-center rounded-xl bg-[var(--black)] px-5 text-sm font-medium text-[var(--cream)] transition hover:opacity-90",
+    "inline-flex h-11 items-center justify-center rounded-full border border-[var(--black)] bg-[var(--black)] px-7 text-[13px] font-medium tracking-[0.08em] text-[var(--cream)] transition duration-200 hover:bg-transparent hover:text-[var(--black)] active:scale-[0.98]",
   btnSecondary:
-    "inline-flex h-11 items-center justify-center rounded-xl border border-[var(--border)] px-5 text-sm font-medium text-[var(--black)] transition hover:bg-black/5",
+    "inline-flex h-11 items-center justify-center rounded-full border border-black/15 bg-transparent px-6 text-sm font-medium text-[var(--black)] transition hover:bg-black/5 active:scale-[0.98]",
 
   // Header
   headerWrap:
@@ -17,7 +17,7 @@ export const ui = {
     "after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-[var(--gold)] after:transition-all hover:after:w-full",
 
   btnGold:
-    "inline-flex h-10 items-center justify-center rounded-xl bg-[var(--gold)] px-4 text-sm font-medium text-[var(--black)] transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
+    "inline-flex h-10 items-center justify-center rounded-full bg-[var(--gold)] px-5 text-sm font-semibold text-[var(--black)] shadow-[0_8px_20px_rgba(198,166,91,0.22)] transition hover:brightness-95 active:scale-[0.98]",
   btnGoldOutline:
     "inline-flex h-10 items-center justify-center rounded-xl border border-[var(--gold)] px-4 text-sm font-medium text-[var(--black)] transition hover:bg-[color:var(--gold)]/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
   iconBtn:
