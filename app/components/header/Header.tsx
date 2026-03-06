@@ -3,7 +3,7 @@ import { MobileDrawer } from "./MobileDrawer";
 import Link from "next/link";
 import { site } from "@/app/content/site";
 import { ui } from "@/app/ui";
-import { HomeIcon, MenuIcon } from "./icons";
+import { HomeIcon, MenuIcon, CloseIcon } from "./icons";
 import { useState, useEffect } from "react";
 
 export function Header() {
@@ -57,15 +57,25 @@ export function Header() {
 
           <button
             type="button"
-            aria-label="Open menu"
+            aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
-            onClick={() => setOpen(true)}
+            onClick={() => setOpen((prev) => !prev)}
             className="flex items-center justify-end text-[#1C1C1C]"
           >
-            <MenuIcon className="h-5 w-5" />
+            <span className="relative flex h-5 w-5 items-center justify-center">
+              <MenuIcon
+                className={`absolute h-5 w-5 transition-all duration-200 ease-out ${
+                  open ? "scale-75 opacity-0" : "scale-100 opacity-100"
+                }`}
+              />
+              <CloseIcon
+                className={`absolute h-5 w-5 transition-all duration-200 ease-out ${
+                  open ? "scale-100 opacity-100" : "scale-75 opacity-0"
+                }`}
+              />
+            </span>
           </button>
         </div>
-
         {/* Tablet + Desktop */}
         <div className="hidden h-full items-center justify-between md:flex">
           <Link href="#home" className="flex items-center">
