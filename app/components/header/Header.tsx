@@ -20,6 +20,19 @@ export function Header() {
     };
   }, [open]);
 
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", handleKey);
+
+    return () => {
+      window.removeEventListener("keydown", handleKey);
+    };
+  }, []);
   return (
     <header className={ui.headerWrap}>
       <div className={`${ui.container} h-16`}>
