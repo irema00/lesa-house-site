@@ -16,20 +16,17 @@ export const site = {
       alt: "Lesa House interior",
     },
     headline: "Welcome to Lesa House",
-    // buraya uygun yazı düşünülecek//
-    kicker: "KICKER",
+
+    kicker: "BOUTIQUE EVENT HOUSE · İzmir",
     subheadline:
       "A warm, premium event space designed for beautiful celebrations and gatherings.",
     primaryCta: { label: "Book an Event", href: "#contact" },
     secondaryCta: { label: "Explore Gallery", href: "#gallery" },
   },
   about: {
-    title: "About Lesa House",
-    body: [
-      "Lesa House is a warm, premium event house designed for intimate celebrations, workshops and curated gatherings.",
-      "A calm aesthetic, flexible layout and thoughtful details—so you can host beautifully, without stress.",
-    ],
-    cta: { label: "See the space", href: "#gallery" },
+    kicker: "About Lesa House",
+    headline: "A warm, premium event house for beautifully hosted gatherings.",
+    text: "Lesa House is designed for intimate celebrations, workshops and curated events with a calm aesthetic, flexible layout and thoughtful details.",
     images: [
       { src: "/images/about-1-placeholder.png", alt: "Lesa House detail view" },
       {
@@ -37,6 +34,7 @@ export const site = {
         alt: "Lesa House seating area",
       },
     ],
+    cta: { label: "See the space", href: "#gallery" },
   },
   contact: {
     phone: "+90 XXX XXX XX XX",
