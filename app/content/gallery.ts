@@ -11,6 +11,12 @@ export type GalleryAlbum = {
   items: GalleryItem[];
 };
 
+export const gallerySection = {
+  kicker: "Gallery",
+  headline: "Moments at Lesa House",
+  description: "A curated selection of gatherings hosted at Lesa House.",
+};
+
 export const galleryAlbums: GalleryAlbum[] = [
   {
     slug: "birthday-celebrations",

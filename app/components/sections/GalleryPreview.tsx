@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ui } from "@/app/ui";
-import { galleryAlbums } from "@/app/content/gallery";
+import { galleryAlbums, gallerySection } from "@/app/content/gallery";
 
 export function GalleryPreview() {
   const visibleAlbums = galleryAlbums.filter((album) => album.items.length > 0);
@@ -14,15 +14,15 @@ export function GalleryPreview() {
       <div className={ui.container}>
         <div className="max-w-xl">
           <p className="text-[10px] uppercase tracking-[0.24em] text-[var(--forest)]">
-            Gallery
+            {gallerySection.kicker}
           </p>
 
           <h2 className="mt-4 font-serif text-[36px] leading-[1.02] tracking-[-0.03em] text-[var(--black)] sm:text-[44px]">
-            Moments at Lesa House
+            {gallerySection.headline}
           </h2>
 
           <p className="mt-5 max-w-[34ch] text-[15px] leading-relaxed text-muted">
-            A curated selection of gatherings hosted at Lesa House.
+            {gallerySection.description}
           </p>
         </div>
 
