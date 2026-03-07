@@ -16,7 +16,13 @@ export const galleryAlbums: GalleryAlbum[] = [
     slug: "birthday-celebrations",
     title: "Birthday Celebrations",
     description: "Curated birthday celebrations hosted at Lesa House.",
-    items: [],
+    items: [
+      {
+        src: "/images/gallery/birthday-celebrations/160A1854.jpg",
+        alt: "Birthday celebration at Lesa House",
+        caption: "Leo’s First Birthday",
+      },
+    ],
   },
   {
     slug: "engagement-traditions",
@@ -43,11 +49,3 @@ export const galleryAlbums: GalleryAlbum[] = [
     items: [],
   },
 ];
-/*
-items: [
-  {
-    src: "/images/gallery/birthday-celebrations/1.jpg",
-    alt: "Birthday celebration at Lesa House",
-    caption: "Leo’s First Birthday",
-  },
-], */
