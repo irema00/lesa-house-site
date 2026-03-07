@@ -8,35 +8,34 @@ export function Hero() {
         {/* Mobile */}
         <div className="lg:hidden">
           <div className="pt-4">
-            <div className="px-6">
-              <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--forest)]">
-                {site.hero.kicker}
-              </p>
+            <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--forest)]">
+              {site.hero.kicker}
+            </p>
 
-              <h1 className="mt-4 max-w-[9ch] font-serif text-[42px] leading-[0.96] tracking-[-0.03em] text-[var(--black)]">
-                {site.hero.headline}
-              </h1>
+            <h1 className="mt-4 max-w-[9ch] font-serif text-[42px] leading-[0.96] tracking-[-0.03em] text-[var(--black)]">
+              {site.hero.headline}
+            </h1>
 
-              <p className="mt-5 max-w-[30ch] text-[14px] leading-relaxed text-muted">
-                {site.hero.subheadline}
-              </p>
+            <p className="mt-5 max-w-[30ch] text-[14px] leading-relaxed text-muted">
+              {site.hero.subheadline}
+            </p>
 
-              <div className="mt-7 grid max-w-[320px] grid-cols-2 gap-3">
-                <a
-                  href={site.hero.primaryCta.href}
-                  className={`${ui.btnPrimary} w-full`}
-                >
-                  {site.hero.primaryCta.label}
-                </a>
+            <div className="mt-7 grid max-w-[320px] grid-cols-2 gap-3">
+              <a
+                href={site.hero.primaryCta.href}
+                className={`${ui.btnPrimary} w-full`}
+              >
+                {site.hero.primaryCta.label}
+              </a>
 
-                <a
-                  href={site.hero.secondaryCta.href}
-                  className={`${ui.btnSecondary} w-full`}
-                >
-                  {site.hero.secondaryCta.label}
-                </a>
-              </div>
+              <a
+                href={site.hero.secondaryCta.href}
+                className={`${ui.btnSecondary} w-full`}
+              >
+                {site.hero.secondaryCta.label}
+              </a>
             </div>
+
             <div className="relative mt-8 px-0  h-[320px] overflow-hidden">
               <Image
                 src={site.hero.image.src}
