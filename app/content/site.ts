@@ -15,17 +15,12 @@ export const site = {
       src: "/images/heroPlaceholder1.png",
       alt: "Lesa House interior",
     },
-    headline: "Welcome to Lesa House",
-
     kicker: "BOUTIQUE EVENT HOUSE · İzmir",
+    headline: "Lesa House",
     subheadline:
       "A warm, premium event space designed for beautiful celebrations and gatherings.",
     primaryCta: { label: "Book an Event", href: "#contact" },
-    secondaryCta: { label: "Explore Gallery", href: "#gallery" },
-    mobile: {
-      kicker: "Welcome to",
-      headline: "Lesa House",
-    },
+    secondaryCta: { label: "Gallery", href: "#gallery" },
   },
   about: {
     kicker: "About Lesa House",

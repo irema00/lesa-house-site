@@ -5,8 +5,9 @@ export const ui = {
   p: "text-[color:var(--muted)] leading-relaxed",
   btnPrimary:
     "inline-flex h-11 items-center justify-center whitespace-nowrap rounded-md border border-[var(--black)] bg-[var(--black)] px-5 text-[12px] font-medium tracking-[0.08em] text-[var(--cream)] transition duration-200 hover:bg-transparent hover:text-[var(--black)] active:scale-[0.98]",
+
   btnSecondary:
-    "inline-flex h-11 items-center justify-center whitespace-nowrap rounded-md border border-[var(--border)] bg-transparent px-6 text-[12px] font-medium tracking-[0.08em] text-[var(--black)] transition duration-200 hover:bg-black/5 active:scale-[0.98]",
+    "inline-flex h-11 items-center justify-center whitespace-nowrap rounded-md border border-[var(--border)] bg-transparent px-5 text-[12px] font-medium tracking-[0.08em] text-[var(--black)] transition duration-200 hover:bg-black/5 active:scale-[0.98]",
 
   // Header
   headerWrap:

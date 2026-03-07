@@ -3,13 +3,41 @@ import { site } from "@/app/content/site";
 import { ui } from "@/app/ui";
 export function Hero() {
   return (
-    <section id="home" className="scroll-mt-24 py-0 lg:py-16">
+    <section id="home" className="scroll-mt-24 py-6 lg:py-16">
       <div className={ui.container}>
-        {/* Mobile layout */}
+        {/* Mobile */}
         <div className="lg:hidden">
-          <div className="relative min-h-[calc(100dvh-64px)] overflow-hidden">
-            {/* Background image under content */}
-            <div className="absolute inset-x-0 bottom-0 h-[60%]">
+          <div className="pt-4">
+            <div className="px-6">
+              <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--forest)]">
+                {site.hero.kicker}
+              </p>
+
+              <h1 className="mt-4 max-w-[9ch] font-serif text-[42px] leading-[0.96] tracking-[-0.03em] text-[var(--black)]">
+                {site.hero.headline}
+              </h1>
+
+              <p className="mt-5 max-w-[30ch] text-[14px] leading-relaxed text-muted">
+                {site.hero.subheadline}
+              </p>
+
+              <div className="mt-7 grid max-w-[320px] grid-cols-2 gap-3">
+                <a
+                  href={site.hero.primaryCta.href}
+                  className={`${ui.btnPrimary} w-full`}
+                >
+                  {site.hero.primaryCta.label}
+                </a>
+
+                <a
+                  href={site.hero.secondaryCta.href}
+                  className={`${ui.btnSecondary} w-full`}
+                >
+                  {site.hero.secondaryCta.label}
+                </a>
+              </div>
+            </div>
+            <div className="relative mt-8 px-0  h-[320px] overflow-hidden">
               <Image
                 src={site.hero.image.src}
                 alt={site.hero.image.alt}
@@ -18,52 +46,23 @@ export function Hero() {
                 className="object-cover object-center"
               />
 
-              {/* Strong top fade for readability */}
-              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,var(--cream)_0%,rgba(244,241,236,0.92)_14%,rgba(244,241,236,0.72)_28%,rgba(244,241,236,0.38)_46%,rgba(244,241,236,0.12)_64%,rgba(244,241,236,0)_100%)]" />
-            </div>
-
-            {/* Content */}
-            <div className="relative z-10 px-4 pt-10 pb-10">
-              <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--forest)]">
-                {site.hero.kicker}
-              </p>
-
-              <h1 className="mt-8 max-w-[11ch] font-serif text-[38px] leading-[1.02] tracking-[-0.03em] text-[var(--black)]">
-                {site.hero.headline}
-              </h1>
-
-              <p className="mt-4 max-w-[32ch] text-[14px] leading-relaxed text-muted">
-                {site.hero.subheadline}
-              </p>
-
-              <div className="mt-7 grid grid-cols-2 gap-3 max-w-[320px]">
-                <a href={site.hero.primaryCta.href} className={ui.btnPrimary}>
-                  {site.hero.primaryCta.label}
-                </a>
-
-                <a
-                  href={site.hero.secondaryCta.href}
-                  className={ui.btnSecondary}
-                >
-                  {site.hero.secondaryCta.label}
-                </a>
-              </div>
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,var(--cream)_0%,rgba(244,241,236,0.72)_14%,rgba(244,241,236,0.22)_34%,rgba(244,241,236,0)_58%)]" />
             </div>
           </div>
         </div>
-        {/* Desktop layout */}
-        <div className="hidden items-center gap-8 lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
-          {/* Text */}
+
+        {/* Desktop */}
+        <div className="hidden items-center gap-10 lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
           <div className="z-10">
-            <p className="text-[11px] uppercase tracking-[0.24em] text-(--forest)">
+            <p className="text-[11px] uppercase tracking-[0.24em] text-[var(--forest)]">
               {site.hero.kicker}
             </p>
 
-            <h1 className="mt-4 max-w-[11ch] font-serif text-[40px] leading-[1.02] tracking-[-0.02em] text-(--black) sm:text-[52px] lg:text-[64px]">
+            <h1 className="mt-4 max-w-[9ch] font-serif text-[44px] leading-[1.02] tracking-[-0.03em] text-[var(--black)] xl:text-[64px]">
               {site.hero.headline}
             </h1>
 
-            <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-muted sm:text-[16px]">
+            <p className="mt-6 max-w-[34ch] text-[15px] leading-relaxed text-muted xl:text-[16px]">
               {site.hero.subheadline}
             </p>
 
@@ -78,17 +77,16 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="relative min-h-80 sm:min-h-105 lg:min-h-135">
+          <div className="relative min-h-[520px] overflow-hidden">
             <Image
               src={site.hero.image.src}
               alt={site.hero.image.alt}
               fill
               priority
-              className="object-cover"
+              className="object-cover object-center"
             />
 
-            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,var(--cream)_0%,rgba(244,241,236,0.88)_10%,rgba(244,241,236,0.35)_24%,rgba(244,241,236,0)_42%)]" />
+            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,var(--cream)_0%,rgba(244,241,236,0.9)_10%,rgba(244,241,236,0.38)_24%,rgba(244,241,236,0)_42%)]" />
           </div>
         </div>
       </div>
