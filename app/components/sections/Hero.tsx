@@ -23,7 +23,7 @@ export function Hero() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 px-6 pt-20 pb-10">
+            <div className="relative z-10 px-4 pt-10 pb-10">
               <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--forest)]">
                 {site.hero.kicker}
               </p>
@@ -36,7 +36,7 @@ export function Hero() {
                 {site.hero.subheadline}
               </p>
 
-              <div className="mt-7 flex flex-row items-start gap-3">
+              <div className="mt-7 grid grid-cols-2 gap-3 max-w-[320px]">
                 <a href={site.hero.primaryCta.href} className={ui.btnPrimary}>
                   {site.hero.primaryCta.label}
                 </a>

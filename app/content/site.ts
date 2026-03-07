@@ -25,7 +25,6 @@ export const site = {
     mobile: {
       kicker: "Welcome to",
       headline: "Lesa House",
-      primaryCta: { label: "Book an Event", href: "#contact" },
     },
   },
   about: {

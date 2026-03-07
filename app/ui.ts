@@ -4,9 +4,9 @@ export const ui = {
   h2: "font-serif text-3xl tracking-tight text-[var(--black)] sm:text-4xl",
   p: "text-[color:var(--muted)] leading-relaxed",
   btnPrimary:
-    "inline-flex h-11 items-center justify-center rounded-md border border-[var(--black)] bg-[var(--black)] px-7 text-[13px] font-medium tracking-[0.06em] text-[var(--cream)] transition-all duration-200 h hover:tracking-[0.12em] hover:scale-[1.02] hover:bg-transparent hover:text-[var(--black)] active:scale-[0.97]",
+    "inline-flex h-11 items-center justify-center whitespace-nowrap rounded-md border border-[var(--black)] bg-[var(--black)] px-5 text-[12px] font-medium tracking-[0.08em] text-[var(--cream)] transition duration-200 hover:bg-transparent hover:text-[var(--black)] active:scale-[0.98]",
   btnSecondary:
-    "inline-flex h-11 items-center justify-center rounded-md border border-[var(--border)] bg-transparent px-6 text-[13px] font-medium tracking-[0.06em] text-[var(--black)] transition-all duration-200 hover:tracking-[0.12em] hover:scale-[1.02] hover:bg-black/5 active:scale-[0.97]",
+    "inline-flex h-11 items-center justify-center whitespace-nowrap rounded-md border border-[var(--border)] bg-transparent px-6 text-[12px] font-medium tracking-[0.08em] text-[var(--black)] transition duration-200 hover:bg-black/5 active:scale-[0.98]",
 
   // Header
   headerWrap:
