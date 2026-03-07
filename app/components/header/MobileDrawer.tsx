@@ -11,6 +11,7 @@ type MobileDrawerProps = {
 };
 
 export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
+  if (!open) return null;
   return (
     <>
       {/* Overlay */}
