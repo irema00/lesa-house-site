@@ -22,6 +22,11 @@ export const site = {
       "A warm, premium event space designed for beautiful celebrations and gatherings.",
     primaryCta: { label: "Book an Event", href: "#contact" },
     secondaryCta: { label: "Explore Gallery", href: "#gallery" },
+    mobile: {
+      kicker: "Welcome to",
+      headline: "Lesa House",
+      primaryCta: { label: "Book an Event", href: "#contact" },
+    },
   },
   about: {
     kicker: "About Lesa House",
