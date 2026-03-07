@@ -23,17 +23,14 @@ export const site = {
     secondaryCta: { label: "Gallery", href: "#gallery" },
   },
   about: {
-    kicker: "About Lesa House",
-    headline: "A warm, premium event house for beautifully hosted gatherings.",
-    text: "Lesa House is designed for intimate celebrations, workshops and curated events with a calm aesthetic, flexible layout and thoughtful details.",
-    images: [
-      { src: "/images/about-1-placeholder.png", alt: "Lesa House detail view" },
-      {
-        src: "/images/about-2-placeholder.jpg",
-        alt: "Lesa House seating area",
-      },
-    ],
-    cta: { label: "See the space", href: "#gallery" },
+    kicker: "About",
+    headline: "The Story of Lesa House",
+    text: "Lesa House is a boutique event house created for beautifully hosted gatherings. A calm aesthetic, thoughtful details and a warm atmosphere shape every celebration here. Designed for intimate celebrations and curated moments, Lesa House offers a space where meaningful occasions unfold naturally.",
+    image: {
+      src: "/images/about-1-placeholder.png",
+      alt: "Lesa House interior detail",
+    },
+    cta: { label: "Explore the Gallery", href: "#gallery" },
   },
   contact: {
     phone: "+90 XXX XXX XX XX",
