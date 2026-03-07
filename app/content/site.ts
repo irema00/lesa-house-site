@@ -12,7 +12,7 @@ export const site = {
   headerCta: { label: "Book an Event", href: "#contact" },
   hero: {
     image: {
-      src: "/images/hero-placeholder.png",
+      src: "/images/heroPlaceholder1.png",
       alt: "Lesa House interior",
     },
     headline: "Welcome to Lesa House",
