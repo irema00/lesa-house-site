@@ -8,6 +8,10 @@ export const ui = {
 
   btnSecondary:
     "inline-flex h-11 items-center justify-center whitespace-nowrap rounded-md border border-[var(--border)] bg-transparent px-5 text-[12px] font-medium tracking-[0.08em] text-[var(--black)] transition duration-200 hover:bg-black/5 active:scale-[0.98]",
+  btnPrimaryMobile:
+    "inline-flex h-11 items-center justify-center whitespace-nowrap rounded-md border border-black bg-black px-5 text-[12px] font-medium tracking-[0.08em] text-[var(--cream)] transition duration-200 active:scale-[0.98] hover:bg-black/5",
+  btnSecondaryMobile:
+    "w-full rounded-md border border-white/55 bg-white/18 px-5 py-3 text-center text-[13px] font-medium tracking-[0.04em] text-white backdrop-blur-sm transition hover:bg-white/40",
 
   // Header
   headerWrap:
