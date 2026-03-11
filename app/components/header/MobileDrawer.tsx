@@ -56,14 +56,6 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
           aria-label="Mobile Navigation"
         >
           <div className="flex flex-col gap-1">
-            <Link
-              href="#home"
-              onClick={onClose}
-              className="rounded-xl px-3 py-3 text-[15px] text-[#1C1C1C] transition hover:bg-black/5"
-            >
-              Home
-            </Link>
-
             {site.nav.map((item) => (
               <Link
                 key={item.href}
