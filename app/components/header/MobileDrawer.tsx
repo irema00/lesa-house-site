@@ -52,7 +52,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
 
         {/* Drawer nav */}
         <nav
-          className="flex flex-1 flex-col items-center px-6 py-8 text-center"
+          className="flex  flex-col items-center px-6 py-8 text-center"
           aria-label="Mobile Navigation"
         >
           <div className="flex flex-col gap-1">
