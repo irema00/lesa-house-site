@@ -31,10 +31,10 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
         aria-hidden={!open}
       >
         {/* Drawer header */}
-        <div className="flex items-center justify-between border-b border-black/10 px-5 py-5">
+        <div className="relative border-b border-black/10 px-6 py-5">
           <Link
             href="#home"
-            className="font-serif text-xl tracking-tight text-[#1C1C1C]"
+            className="block text-center font-serif text-[24px] tracking-[-0.02em] text-[#1C1C1C]"
             onClick={onClose}
           >
             {site.brand.name}
@@ -44,7 +44,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
             type="button"
             aria-label="Close menu"
             onClick={onClose}
-            className="text-[#1C1C1C] transition active:scale-90 active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10"
+            className="absolute right-5 top-1/2 -translate-y-1/2 text-[#1C1C1C] transition active:scale-90 active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10"
           >
             <CloseIcon className="h-5 w-5" />
           </button>
@@ -52,7 +52,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
 
         {/* Drawer nav */}
         <nav
-          className="flex flex-1 flex-col px-5 py-6"
+          className="flex flex-1 flex-col items-center px-6 py-8 text-center"
           aria-label="Mobile Navigation"
         >
           <div className="flex flex-col gap-1">
@@ -61,9 +61,10 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
                 key={item.href}
                 href={item.href}
                 onClick={onClose}
-                className="rounded-xl px-3 py-3 text-[15px] text-[#1C1C1C] transition hover:bg-black/5"
+                className="group flex w-full flex-col items-center justify-center rounded-xl px-4 py-3 text-center font-serif text-[18px] tracking-[0.02em] text-[#1C1C1C] transition-all duration-300 hover:scale-[1.03] hover:tracking-[0.05em]"
               >
-                {item.label}
+                <span>{item.label}</span>
+                <span className="mt-2 block h-[1px] w-12 bg-[#C6A65B] transition-all duration-300 group-hover:w-16" />
               </Link>
             ))}
           </div>
